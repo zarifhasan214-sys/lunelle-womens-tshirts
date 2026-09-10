@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Soft Rib Tee | Lunelle</title>
+
+  <meta
+    name="description"
+    content="Shop The Soft Rib Tee from Lunelle. A premium everyday women's T-shirt designed for effortless comfort and timeless style."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free shipping on orders over $75
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <button
+        class="mobile-menu-btn"
+        onclick="toggleProductMenu()"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+      <a href="index.html" class="logo">
+        LUNELLE
+      </a>
+
+      <nav class="main-nav" id="productNav">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="index.html#new">New</a>
+
+        <a href="index.html#best">Best Sellers</a>
+
+        <a href="index.html#categories">Categories</a>
+
+        <a href="index.html#offer">Offers</a>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button
+          class="header-icon"
+          onclick="toggleSearch()"
+          aria-label="Search"
+        >
+          ⌕
+        </button>
+
+        <button
+          class="header-icon"
+          onclick="openProductCart()"
+          aria-label="Shopping bag"
+        >
+          ♧
+          <span class="bag-count" id="productBagCount">0</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="search-box" id="searchBox">
+
+      <input
+        type="text"
+        id="productSearch"
+        placeholder="Search products..."
+      />
+
+      <button onclick="searchProduct()">
+        Search
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section">
+
+    <div class="container">
+
+      <div class="breadcrumb">
+
+        <a href="index.html">Home</a>
+
+        <span>/</span>
+
+        <a href="shop.html">Shop</a>
+
+        <span>/</span>
+
+        <span>The Soft Rib Tee</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Product Details -->
+  <main class="product-page">
+
+    <div class="container">
+
+      <div class="product-layout">
+
+
+        <!-- ================================= -->
+        <!-- Product Gallery -->
+        <!-- ================================= -->
+
+        <section class="product-gallery">
+
+          <div class="thumbnail-list">
+
+            <button
+              class="thumbnail active"
+              onclick="changeProductImage(1)"
+            >
+              <div class="product-visual cream">
+                <div class="tshirt-shape">
+                  <span></span>
+                </div>
+              </div>
+            </button>
+
+
+            <button
+              class="thumbnail"
+              onclick="changeProductImage(2)"
+            >
+              <div class="product-visual rose">
+                <div class="tshirt-shape">
+                  <span></span>
+                </div>
+              </div>
+            </button>
+
+
+            <button
+              class="thumbnail"
+              onclick="changeProductImage(3)"
+            >
+              <div class="product-visual sage">
+                <div class="tshirt-shape">
+                  <span></span>
+                </div>
+              </div>
+            </button>
+
+
+            <button
+              class="thumbnail"
+              onclick="changeProductImage(4)"
+            >
+              <div class="product-visual black">
+                <div class="tshirt-shape">
+                  <span></span>
+                </div>
+              </div>
+            </button>
+
+          </div>
+
+
+          <div class="main-product-image" id="mainProductImage">
+
+            <div class="product-visual cream large">
+
+              <div class="tshirt-shape">
+
+                <span></span>
+
+              </div>
+
+            </div>
+
+            <div class="image-label">
+              LUNELLE
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- Product Information -->
+        <!-- ================================= -->
+
+        <section class="product-info">
+
+          <div class="product-category">
+            ESSENTIAL COLLECTION
+          </div>
+
+
+          <h1>
+            The Soft Rib Tee
+          </h1>
+
+
+          <!-- Rating -->
+          <div class="product-rating">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <a href="#reviews">
+              4.9 · 126 Reviews
+            </a>
+
+          </div>
+
+
+          <!-- Price -->
+          <div class="product-price">
+
+            <span class="old-price">
+              $42.00
+            </span>
+
+            <span class="sale-price">
+              $32.00
+            </span>
+
+            <span class="discount-badge">
+              24% OFF
+            </span>
+
+          </div>
+
+
+          <p class="product-short-description">
+
+            A soft, refined everyday tee designed with a subtle ribbed
+            texture and an effortlessly clean silhouette.
+
+          </p>
+
+
+          <div class="product-divider"></div>
+
+
+          <!-- Color -->
+          <div class="selection-group">
+
+            <div class="selection-heading">
+
+              <strong>
+                Color
+              </strong>
+
+              <span id="selectedColor">
+                Cream
+              </span>
+
+            </div>
+
+
+            <div class="color-options">
+
+              <button
+                class="color-option active"
+                data-color="Cream"
+                onclick="selectColor(this)"
+                aria-label="Cream"
+              >
+              </button>
+
+
+              <button
+                class="color-option black"
+                data-color="Black"
+                onclick="selectColor(this)"
+                aria-label="Black"
+              >
+              </button>
+
+
+              <button
+                class="color-option rose"
+                data-color="Rose"
+                onclick="selectColor(this)"
+                aria-label="Rose"
+              >
+              </button>
+
+
+              <button
+                class="color-option sage"
+                data-color="Sage"
+                onclick="selectColor(this)"
+                aria-label="Sage"
+              >
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- Size -->
+          <div class="selection-group">
+
+            <div class="selection-heading">
+
+              <strong>
+                Size
+              </strong>
+
+              <a href="#size-chart">
+                Size Guide
+              </a>
+
+            </div>
+
+
+            <div class="size-options">
+
+              <button
+                class="size-option"
+                onclick="selectSize(this)"
+              >
+                XS
+              </button>
+
+              <button
+                class="size-option active"
+                onclick="selectSize(this)"
+              >
+                S
+              </button>
+
+              <button
+                class="size-option"
+                onclick="selectSize(this)"
+              >
+                M
+              </button>
+
+              <button
+                class="size-option"
+                onclick="selectSize(this)"
+              >
+                L
+              </button>
+
+              <button
+                class="size-option"
+                onclick="selectSize(this)"
+              >
+                XL
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- Quantity -->
+          <div class="selection-group">
+
+            <div class="selection-heading">
+
+              <strong>
+                Quantity
+              </strong>
+
+            </div>
+
+
+            <div class="quantity-selector">
+
+              <button onclick="decreaseQuantity()">
+                −
+              </button>
+
+              <span id="quantity">
+                1
+              </span>
+
+              <button onclick="increaseQuantity()">
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="product-buttons">
+
+            <button
+              class="add-cart-btn"
+              onclick="addProductToCart()"
+            >
+              Add to Cart
+            </button>
+
+
+            <button
+              class="buy-now-btn"
+              onclick="buyProductNow()"
+            >
+              Buy Now
+            </button>
+
+          </div>
+
+
+          <!-- Product Benefits -->
+          <div class="product-benefits">
+
+            <div class="benefit">
+
+              <span class="benefit-icon">
+                ♢
+              </span>
+
+              <div>
+                <strong>
+                  Premium Quality
+                </strong>
+
+                <p>
+                  Carefully selected fabrics and finishing.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+              <span class="benefit-icon">
+                ↺
+              </span>
+
+              <div>
+                <strong>
+                  Easy Returns
+                </strong>
+
+                <p>
+                  Simple returns within 14 days.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+              <span class="benefit-icon">
+                ♧
+              </span>
+
+              <div>
+                <strong>
+                  Secure Checkout
+                </strong>
+
+                <p>
+                  Safe and secure payment experience.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+
+      <!-- ================================= -->
+      <!-- Description -->
+      <!-- ================================= -->
+
+      <section class="product-content-section">
+
+        <div class="content-tabs">
+
+          <button
+            class="content-tab active"
+            onclick="showProductTab('description', this)"
+          >
+            Description
+          </button>
+
+          <button
+            class="content-tab"
+            onclick="showProductTab('details', this)"
+          >
+            Details
+          </button>
+
+          <button
+            class="content-tab"
+            onclick="showProductTab('shipping', this)"
+          >
+            Shipping & Returns
+          </button>
+
+        </div>
+
+
+        <div
+          class="tab-content active"
+          id="description"
+        >
+
+          <h2>
+            Made for everyday moments.
+          </h2>
+
+          <p>
+            The Soft Rib Tee is designed to become one of those pieces
+            you reach for again and again. Its soft ribbed texture,
+            comfortable fit, and timeless design make it easy to style
+            throughout the week.
+          </p>
+
+          <p>
+            Pair it with denim, tailored trousers, skirts, or layered
+            under your favorite jacket for a clean and effortless look.
+          </p>
+
+        </div>
+
+
+        <div
+          class="tab-content"
+          id="details"
+        >
+
+          <h2>
+            Product Details
+          </h2>
+
+          <ul class="details-list">
+
+            <li>
+              Soft ribbed fabric
+            </li>
+
+            <li>
+              Relaxed everyday silhouette
+            </li>
+
+            <li>
+              Crew neckline
+            </li>
+
+            <li>
+              Short sleeves
+            </li>
+
+            <li>
+              Designed for everyday wear
+            </li>
+
+            <li>
+              Machine washable
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div
+          class="tab-content"
+          id="shipping"
+        >
+
+          <h2>
+            Shipping & Returns
+          </h2>
+
+          <p>
+            Orders are carefully packed before dispatch. Shipping
+            times may vary depending on destination and delivery
+            service.
+          </p>
+
+          <p>
+            If your purchase isn't right for you, eligible items can
+            be returned within 14 days of delivery.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================================= -->
+      <!-- Size Chart -->
+      <!-- ================================= -->
+
+      <section
+        class="size-chart-section"
+        id="size-chart"
+      >
+
+        <div class="section-heading-center">
+
+          <span>
+            FIND YOUR FIT
+          </span>
+
+          <h2>
+            Size Chart
+          </h2>
+
+          <p>
+            Use the measurements below as a general guide.
+          </p>
+
+        </div>
+
+
+        <div class="size-table-wrapper">
+
+          <table class="size-table">
+
+            <thead>
+
+              <tr>
+
+                <th>
+                  Size
+                </th>
+
+                <th>
+                  Bust
+                </th>
+
+                <th>
+                  Waist
+                </th>
+
+                <th>
+                  Length
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <tbody>
+
+              <tr>
+
+                <td>
+                  XS
+                </td>
+
+                <td>
+                  32–33"
+                </td>
+
+                <td>
+                  25–26"
+                </td>
+
+                <td>
+                  24"
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  S
+                </td>
+
+                <td>
+                  34–35"
+                </td>
+
+                <td>
+                  27–28"
+                </td>
+
+                <td>
+                  25"
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  M
+                </td>
+
+                <td>
+                  36–37"
+                </td>
+
+                <td>
+                  29–30"
+                </td>
+
+                <td>
+                  26"
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  L
+                </td>
+
+                <td>
+                  38–40"
+                </td>
+
+                <td>
+                  31–33"
+                </td>
+
+                <td>
+                  27"
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  XL
+                </td>
+
+                <td>
+                  41–43"
+                </td>
+
+                <td>
+                  34–36"
+                </td>
+
+                <td>
+                  28"
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+        <p class="size-note">
+          Measurements are provided as a general guide. Please check
+          the product-specific fit before ordering.
+        </p>
+
+      </section>
+
+
+      <!-- ================================= -->
+      <!-- Reviews -->
+      <!-- ================================= -->
+
+      <section
+        class="reviews-section"
+        id="reviews"
+      >
+
+        <div class="section-heading-center">
+
+          <span>
+            CUSTOMER LOVE
+          </span>
+
+          <h2>
+            Reviews
+          </h2>
+
+        </div>
+
+
+        <div class="review-summary">
+
+          <div class="review-score">
+
+            <strong>
+              4.9
+            </strong>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <span>
+              Based on 126 reviews
+            </span>
+
+          </div>
+
+
+          <div class="review-bars">
+
+            <div class="rating-row">
+
+              <span>
+                5
+              </span>
+
+              <div class="rating-bar">
+                <span style="width:92%"></span>
+              </div>
+
+              <span>
+                92%
+              </span>
+
+            </div>
+
+
+            <div class="rating-row">
+
+              <span>
+                4
+              </span>
+
+              <div class="rating-bar">
+                <span style="width:6%"></span>
+              </div>
+
+              <span>
+                6%
+              </span>
+
+            </div>
+
+
+            <div class="rating-row">
+
+              <span>
+                3
+              </span>
+
+              <div class="rating-bar">
+                <span style="width:2%"></span>
+              </div>
+
+              <span>
+                2%
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Reviews -->
+        <div class="reviews-list">
+
+
+          <article class="review-card">
+
+            <div class="review-card-top">
+
+              <div>
+
+                <strong>
+                  Emma R.
+                </strong>
+
+                <span class="verified">
+                  Verified purchase
+                </span>
+
+              </div>
+
+              <div class="stars">
+                ★★★★★
+              </div>
+
+            </div>
+
+            <h3>
+              Beautiful quality
+            </h3>
+
+            <p>
+              The fabric feels really soft and the fit is comfortable.
+              It has quickly become one of my favorite everyday pieces.
+            </p>
+
+            <span class="review-date">
+              March 2026
+            </span>
+
+          </article>
+
+
+          <article class="review-card">
+
+            <div class="review-card-top">
+
+              <div>
+
+                <strong>
+                  Olivia M.
+                </strong>
+
+                <span class="verified">
+                  Verified purchase
+                </span>
+
+              </div>
+
+              <div class="stars">
+                ★★★★★
+              </div>
+
+            </div>
+
+            <h3>
+              Simple and elegant
+            </h3>
+
+            <p>
+              Love the minimal design. The cream color is beautiful
+              and works with almost everything in my wardrobe.
+            </p>
+
+            <span class="review-date">
+              February 2026
+            </span>
+
+          </article>
+
+
+          <article class="review-card">
+
+            <div class="review-card-top">
+
+              <div>
+
+                <strong>
+                  Sophia K.
+                </strong>
+
+                <span class="verified">
+                  Verified purchase
+                </span>
+
+              </div>
+
+              <div class="stars">
+                ★★★★★
+              </div>
+
+            </div>
+
+            <h3>
+              Exactly what I wanted
+            </h3>
+
+            <p>
+              Comfortable, clean and easy to style. The material feels
+              premium and the overall finish is lovely.
+            </p>
+
+            <span class="review-date">
+              January 2026
+            </span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================================= -->
+      <!-- Related Products -->
+      <!-- ================================= -->
+
+      <section class="related-products">
+
+        <div class="section-heading-center">
+
+          <span>
+            YOU MAY ALSO LIKE
+          </span>
+
+          <h2>
+            More from Lunelle
+          </h2>
+
+        </div>
+
+
+        <div class="related-grid">
+
+
+          <a
+            href="product.html"
+            class="related-card"
+          >
+
+            <div class="related-image rose">
+
+              <div class="tshirt-shape">
+                <span></span>
+              </div>
+
+            </div>
+
+            <div class="related-info">
+
+              <h3>
+                The Everyday Tee
+              </h3>
+
+              <span>
+                $34.00
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="product.html"
+            class="related-card"
+          >
+
+            <div class="related-image black">
+
+              <div class="tshirt-shape">
+                <span></span>
+              </div>
+
+            </div>
+
+            <div class="related-info">
+
+              <h3>
+                The Essential Tee
+              </h3>
+
+              <span>
+                $29.00
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="product.html"
+            class="related-card"
+          >
+
+            <div class="related-image sage">
+
+              <div class="tshirt-shape">
+                <span></span>
+              </div>
+
+            </div>
+
+            <div class="related-info">
+
+              <h3>
+                The Studio Tee
+              </h3>
+
+              <span>
+                $38.00
+              </span>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- ================================= -->
+  <!-- Cart Drawer -->
+  <!-- ================================= -->
+
+  <aside
+    class="product-cart"
+    id="productCart"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        Your Bag
+      </h2>
+
+      <button onclick="closeProductCart()">
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="productCartItems"
+    >
+
+      <div class="empty-cart">
+
+        <p>
+          Your bag is currently empty.
+        </p>
+
+        <a href="shop.html">
+          Continue Shopping
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-subtotal">
+
+        <span>
+          Subtotal
+        </span>
+
+        <strong id="productCartTotal">
+          $0.00
+        </strong>
+
+      </div>
+
+      <button
+        class="checkout-btn"
+        onclick="productCheckout()"
+      >
+        Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <div
+    class="cart-overlay"
+    id="productCartOverlay"
+    onclick="closeProductCart()"
+  ></div>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="footer-logo">
+            LUNELLE
+          </a>
+
+          <p>
+            Thoughtfully designed essentials for everyday living.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Shop
+          </h4>
+
+          <a href="shop.html">
+            All Products
+          </a>
+
+          <a href="index.html#new">
+            New Collection
+          </a>
+
+          <a href="index.html#best">
+            Best Sellers
+          </a>
+
+          <a href="index.html#offer">
+            Offers
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Help
+          </h4>
+
+          <a href="#">
+            Contact
+          </a>
+
+          <a href="#">
+            Shipping
+          </a>
+
+          <a href="#">
+            Returns
+          </a>
+
+          <a href="#">
+            Size Guide
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Follow
+          </h4>
+
+          <a href="#">
+            Instagram
+          </a>
+
+          <a href="#">
+            Pinterest
+          </a>
+
+          <a href="#">
+            TikTok
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Lunelle. All rights reserved.
+        </span>
+
+        <span>
+          Designed with intention.
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="product.js"></script>
+
+</body>
+</html>
