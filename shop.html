@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Shop all premium women's t-shirts at Lunelle.">
+
+    <title>Shop All | LUNELLE</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+
+    <!-- Shop CSS -->
+
+    <link
+        rel="stylesheet"
+        href="shop.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Announcement -->
+
+    <div class="announcement">
+
+        FREE SHIPPING ON ORDERS OVER $75
+
+        <span>•</span>
+
+        EASY 14-DAY RETURNS
+
+    </div>
+
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <a
+            href="index.html"
+            class="logo">
+
+            LUNELLE<span>.</span>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html"
+                class="active">
+
+                Shop
+
+            </a>
+
+            <a href="#best">
+                Best Sellers
+            </a>
+
+            <a href="#categories">
+                Collections
+            </a>
+
+            <a href="#offer">
+                Offers
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                onclick="toggleShopSearch()">
+
+                ⌕
+
+            </button>
+
+
+            <button
+                class="icon-button bag-button"
+                onclick="toggleShopCart()">
+
+                ♧
+
+                <span id="shopCartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="menu-button"
+                onclick="toggleShopMenu()">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Search -->
+
+    <div
+        class="shop-search"
+        id="shopSearch">
+
+        <input
+            type="search"
+            id="shopSearchInput"
+            placeholder="Search t-shirts..."
+            oninput="filterProducts()">
+
+        <button
+            onclick="toggleShopSearch()">
+
+            Close
+
+        </button>
+
+    </div>
+
+
+
+    <!-- SHOP HERO -->
+
+    <section class="shop-hero">
+
+        <div>
+
+            <p class="eyebrow">
+                THE LUNELLE STORE
+            </p>
+
+            <h1>
+                All
+                <em>Tees.</em>
+            </h1>
+
+            <p>
+                Thoughtfully designed everyday
+                essentials in soft fabrics,
+                timeless shades and easy fits.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SHOP AREA -->
+
+    <main class="shop-container">
+
+
+        <!-- FILTER SIDEBAR -->
+
+        <aside
+            class="filter-sidebar"
+            id="filterSidebar">
+
+
+            <div class="filter-top">
+
+                <h3>
+                    Filters
+                </h3>
+
+                <button
+                    onclick="resetFilters()">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CATEGORY -->
+
+            <div class="filter-group">
+
+                <button
+                    class="filter-title"
+                    onclick="toggleFilter(this)">
+
+                    Category
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="filter-content">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Essential"
+                            class="category-filter"
+                            onchange="filterProducts()">
+
+                        Essential Tees
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Relaxed"
+                            class="category-filter"
+                            onchange="filterProducts()">
+
+                        Relaxed Fit
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Statement"
+                            class="category-filter"
+                            onchange="filterProducts()">
+
+                        Statement Tees
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRICE -->
+
+            <div class="filter-group">
+
+                <button
+                    class="filter-title"
+                    onclick="toggleFilter(this)">
+
+                    Price
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="filter-content">
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="all"
+                            checked
+                            onchange="filterProducts()">
+
+                        All prices
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="under30"
+                            onchange="filterProducts()">
+
+                        Under $30
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="30to35"
+                            onchange="filterProducts()">
+
+                        $30 – $35
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="35to40"
+                            onchange="filterProducts()">
+
+                        $35 – $40
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="over40"
+                            onchange="filterProducts()">
+
+                        Over $40
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SIZE -->
+
+            <div class="filter-group">
+
+                <button
+                    class="filter-title"
+                    onclick="toggleFilter(this)">
+
+                    Size
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="filter-content size-options">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="XS"
+                            class="size-filter"
+                            onchange="filterProducts()">
+
+                        XS
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="S"
+                            class="size-filter"
+                            onchange="filterProducts()">
+
+                        S
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="M"
+                            class="size-filter"
+                            onchange="filterProducts()">
+
+                        M
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="L"
+                            class="size-filter"
+                            onchange="filterProducts()">
+
+                        L
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="XL"
+                            class="size-filter"
+                            onchange="filterProducts()">
+
+                        XL
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COLOR -->
+
+            <div class="filter-group">
+
+                <button
+                    class="filter-title"
+                    onclick="toggleFilter(this)">
+
+                    Color
+
+                    <span>
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="filter-content color-options">
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Cream"
+                            class="color-filter"
+                            onchange="filterProducts()">
+
+                        <span class="color-dot cream"></span>
+
+                        Cream
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Black"
+                            class="color-filter"
+                            onchange="filterProducts()">
+
+                        <span class="color-dot black"></span>
+
+                        Black
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Rose"
+                            class="color-filter"
+                            onchange="filterProducts()">
+
+                        <span class="color-dot rose"></span>
+
+                        Rose
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Sage"
+                            class="color-filter"
+                            onchange="filterProducts()">
+
+                        <span class="color-dot sage"></span>
+
+                        Sage
+
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="Brown"
+                            class="color-filter"
+                            onchange="filterProducts()">
+
+                        <span class="color-dot brown"></span>
+
+                        Brown
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- PRODUCTS -->
+
+        <section class="shop-products">
+
+
+            <div class="products-toolbar">
+
+
+                <div>
+
+                    <button
+                        class="mobile-filter-button"
+                        onclick="toggleFilters()">
+
+                        ☰ Filters
+
+                    </button>
+
+
+                    <p id="productCount">
+                        12 Products
+                    </p>
+
+                </div>
+
+
+                <div class="sort-wrapper">
+
+                    <label for="sortProducts">
+                        Sort by
+                    </label>
+
+
+                    <select
+                        id="sortProducts"
+                        onchange="filterProducts()">
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="shop-product-grid"
+                id="shopProductGrid">
+
+            </div>
+
+
+            <div
+                class="no-products"
+                id="noProducts">
+
+                <h3>
+                    Nothing found
+                </h3>
+
+                <p>
+                    Try changing your filters.
+                </p>
+
+                <button
+                    class="button dark-button"
+                    onclick="resetFilters()">
+
+                    RESET FILTERS
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- MOBILE FILTER OVERLAY -->
+
+    <div
+        class="filter-overlay"
+        id="filterOverlay"
+        onclick="toggleFilters()">
+    </div>
+
+
+
+    <!-- CART -->
+
+    <aside
+        class="cart"
+        id="shopCart">
+
+        <div class="cart-header">
+
+            <h3>
+                Your Bag
+            </h3>
+
+            <button
+                onclick="toggleShopCart()">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div id="shopCartItems">
+
+            <p class="empty-cart">
+                Your bag is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="subtotal">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="shopSubtotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="button dark-button checkout-button"
+                onclick="shopCheckout()">
+
+                CHECKOUT
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <div
+        class="overlay"
+        id="shopCartOverlay"
+        onclick="toggleShopCart()">
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    LUNELLE<span>.</span>
+
+                </a>
+
+                <p>
+
+                    Quiet confidence.
+                    Thoughtful essentials.
+                    Made for the way you live.
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="shop.html">
+                    All Products
+                </a>
+
+                <a href="#new">
+                    New In
+                </a>
+
+                <a href="#best">
+                    Best Sellers
+                </a>
+
+                <a href="#offer">
+                    Offers
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Shipping & Returns
+                </a>
+
+                <a href="#">
+                    Size Guide
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <div class="newsletter">
+
+                <h4>
+                    STAY IN THE LOOP
+                </h4>
+
+                <p>
+                    New drops, thoughtful edits
+                    and private offers.
+                </p>
+
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Your email address">
+
+                    <button>
+                        →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Lunelle. All rights reserved.
+            </span>
+
+            <span>
+                Instagram &nbsp;
+                Pinterest &nbsp;
+                TikTok
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>
