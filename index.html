@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Lunelle - Premium women's t-shirts designed for everyday confidence.">
+
+    <title>LUNELLE | Women's T-Shirts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        FREE SHIPPING ON ORDERS OVER $75
+        <span>•</span>
+        EASY 14-DAY RETURNS
+    </div>
+
+
+    <!-- Header -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            LUNELLE<span>.</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#new">New In</a>
+            <a href="#best">Best Sellers</a>
+            <a href="#categories">Collections</a>
+            <a href="#offer">Offers</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                onclick="toggleSearch()"
+                aria-label="Search">
+                ⌕
+            </button>
+
+            <button
+                class="icon-button bag-button"
+                onclick="toggleCart()"
+                aria-label="Shopping Bag">
+
+                ♧
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Search -->
+    <div class="search-panel" id="searchPanel">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search products..."
+            oninput="searchProducts()">
+
+        <button onclick="toggleSearch()">
+            Close
+        </button>
+
+    </div>
+
+
+    <main>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    THE EVERYDAY EDIT
+                </p>
+
+                <h1>
+                    Made for your
+                    <br>
+                    <em>every day.</em>
+                </h1>
+
+                <p class="hero-description">
+
+                    Effortless silhouettes, soft-touch fabrics and
+                    timeless shades designed to move with you.
+
+                </p>
+
+                <a href="#new" class="button dark-button">
+
+                    SHOP NEW COLLECTION
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-badge">
+
+                    NEW
+
+                    <strong>
+                        SS26
+                    </strong>
+
+                </div>
+
+                <div class="model-shape"></div>
+
+                <div class="hero-brand">
+                    LUNELLE
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NEW COLLECTION -->
+        <section class="section" id="new">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        JUST DROPPED
+                    </p>
+
+                    <h2>
+                        New Collection
+                    </h2>
+
+                </div>
+
+                <a href="#featured" class="view-link">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="newProducts">
+            </div>
+
+        </section>
+
+
+
+        <!-- OFFER -->
+        <section class="offer" id="offer">
+
+            <div class="offer-content">
+
+                <p class="eyebrow">
+                    A LITTLE EXTRA
+                </p>
+
+                <h2>
+                    Refresh your wardrobe.
+                    <br>
+                    <em>Save 20%.</em>
+                </h2>
+
+                <p>
+                    Use code
+                    <strong>LUNELLE20</strong>
+                    at checkout on selected styles.
+                </p>
+
+                <a href="#featured" class="button light-button">
+
+                    SHOP THE OFFER
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="discount-circle">
+
+                <span>
+                    20%
+                </span>
+
+                <small>
+                    OFF
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BEST SELLING -->
+        <section class="section" id="best">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        CUSTOMER FAVORITES
+                    </p>
+
+                    <h2>
+                        Best Selling
+                    </h2>
+
+                </div>
+
+                <a href="#featured" class="view-link">
+                    Explore →
+                </a>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="bestProducts">
+            </div>
+
+        </section>
+
+
+
+        <!-- CATEGORIES -->
+        <section class="section categories" id="categories">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FIND YOUR FIT
+                    </p>
+
+                    <h2>
+                        Shop by Category
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <a href="#featured"
+                    class="category-card category-one">
+
+                    <span class="category-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Essential Tees
+                        </h3>
+
+                        <small>
+                            Everyday staples →
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+
+                <a href="#featured"
+                    class="category-card category-two">
+
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Relaxed Fit
+                        </h3>
+
+                        <small>
+                            Easy, effortless →
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+
+                <a href="#featured"
+                    class="category-card category-three">
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Statement Tees
+                        </h3>
+
+                        <small>
+                            Made to stand out →
+                        </small>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="section" id="featured">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        THE LUNELLE EDIT
+                    </p>
+
+                    <h2>
+                        Featured Products
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="featuredProducts">
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- SHOPPING CART -->
+    <aside class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <h3>
+                Your Bag
+            </h3>
+
+            <button onclick="toggleCart()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your bag is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="subtotal">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button
+                class="button dark-button checkout-button"
+                onclick="checkout()">
+
+                CHECKOUT
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div
+        class="overlay"
+        id="overlay"
+        onclick="toggleCart()">
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    LUNELLE<span>.</span>
+                </a>
+
+                <p>
+                    Quiet confidence. Thoughtful essentials.
+                    Made for the way you live.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="#new">
+                    New In
+                </a>
+
+                <a href="#best">
+                    Best Sellers
+                </a>
+
+                <a href="#categories">
+                    Collections
+                </a>
+
+                <a href="#offer">
+                    Offers
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Shipping & Returns
+                </a>
+
+                <a href="#">
+                    Size Guide
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <div class="newsletter">
+
+                <h4>
+                    STAY IN THE LOOP
+                </h4>
+
+                <p>
+                    New drops, thoughtful edits and private offers.
+                </p>
+
+
+                <form onsubmit="subscribe(event)">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required>
+
+                    <button type="submit">
+                        →
+                    </button>
+
+                </form>
+
+                <small id="subscribeMessage"></small>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Lunelle. All rights reserved.
+            </span>
+
+            <span>
+                Instagram &nbsp; Pinterest &nbsp; TikTok
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
